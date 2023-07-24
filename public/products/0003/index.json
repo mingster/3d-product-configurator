@@ -10,7 +10,7 @@
   "nodes": [
     {
       "id": "metal",
-      "label": "metal",
+      "label": "椅腳支撐",
       "defaultMesh": "metal",
       "defaultMaterial": {
         "name": "Gold old",
@@ -72,7 +72,7 @@
     },
     {
       "id": "seat",
-      "label": "seat",
+      "label": "椅座",
       "defaultMesh": "seat",
       "defaultMaterial": {
         "name": "Wood",
@@ -134,7 +134,7 @@
     },
     {
       "id": "wood",
-      "label": "wood",
+      "label": "椅腳",
       "defaultMesh": "wood",
       "defaultMaterial": {
         "name": "Cheap wood",

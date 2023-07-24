@@ -1,12 +1,13 @@
-import {useDispatch, useSelector} from "react-redux"
-import {useEffect, useState} from "react"
-import {SET_CURRENT_MATERIAL_DATA} from "../../redux/StoreConstants"
-import {Box, Divider, Paper, Switch, Typography} from "@material-ui/core"
+import { useDispatch, useSelector } from "react-redux"
+import { useEffect, useState } from "react"
+import { SET_CURRENT_MATERIAL_DATA } from "../../redux/StoreConstants"
+import { Box, Divider, Paper, Switch, Typography } from "@material-ui/core"
+import ToggleDisplay from "react-toggle-display"
 
 let animationFrameReq
 
 const MaterialSelector = () => {
-  const {currentMaterialData} = useSelector(state => state["materialStore"])
+  const { currentMaterialData } = useSelector(state => state["materialStore"])
   const dispatch = useDispatch()
 
   const [scale, setScale] = useState(1)
@@ -88,6 +89,8 @@ const MaterialSelector = () => {
   }
 
   return (
+    <></>
+    /*
     <>
       <Paper>
         <Box p={2}>
@@ -100,7 +103,7 @@ const MaterialSelector = () => {
               max={20}
               step={0.1}
               onChange={handleScaleChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
 
@@ -117,7 +120,7 @@ const MaterialSelector = () => {
               max={20}
               step={0.01}
               onChange={handleNormalScaleChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
 
@@ -134,7 +137,7 @@ const MaterialSelector = () => {
               max={2}
               step={stepSize}
               onChange={handleInputChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
 
@@ -148,7 +151,7 @@ const MaterialSelector = () => {
               max={1}
               step={0.01}
               onChange={handleInputChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
 
@@ -162,7 +165,7 @@ const MaterialSelector = () => {
               max={1}
               step={0.01}
               onChange={handleInputChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
 
@@ -179,7 +182,7 @@ const MaterialSelector = () => {
               max={1}
               step={0.01}
               onChange={handleInputChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
           <Box display="flex" mt={1} mb={1} justifyContent="space-between">
@@ -193,7 +196,7 @@ const MaterialSelector = () => {
               max={1}
               step={0.01}
               onChange={handleInputChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
 
@@ -209,7 +212,7 @@ const MaterialSelector = () => {
               max={1}
               step={0.1}
               onChange={handleInputChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
 
@@ -225,7 +228,7 @@ const MaterialSelector = () => {
               max={1}
               step={0.1}
               onChange={handleInputChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
 
@@ -241,7 +244,7 @@ const MaterialSelector = () => {
               max={1}
               step={0.1}
               onChange={handleInputChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
 
@@ -257,7 +260,7 @@ const MaterialSelector = () => {
               max={1}
               step={0.1}
               onChange={handleInputChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
           <Box display="flex" mt={1} mb={1} justifyContent="space-between">
@@ -270,7 +273,7 @@ const MaterialSelector = () => {
               max={1}
               step={0.1}
               onChange={handleInputChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
 
@@ -312,12 +315,13 @@ const MaterialSelector = () => {
               max={1}
               step={0.05}
               onChange={handleInputChange}
-              style={{width: 50}}
+              style={{ width: 50 }}
             />
           </Box>
         </Box>
       </Paper>
     </>
+     */
   )
 }
 

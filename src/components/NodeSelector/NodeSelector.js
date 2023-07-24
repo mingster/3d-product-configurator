@@ -1,9 +1,9 @@
 import React from "react"
-import {connect} from "react-redux"
-import {PropTypes} from "prop-types"
-import {FormControl, InputLabel, Select} from "@material-ui/core"
-import {makeStyles} from "@material-ui/core/styles"
-import {setCurrentNodeData} from "../../redux/actions/NodeActions"
+import { connect } from "react-redux"
+import { PropTypes } from "prop-types"
+import { FormControl, InputLabel, Select } from "@material-ui/core"
+import { makeStyles } from "@material-ui/core/styles"
+import { setCurrentNodeData } from "../../redux/actions/NodeActions"
 
 const useStyles = makeStyles(theme => ({
   formControl: {
@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
 
 const NodeSelector = props => {
   const classes = useStyles()
-  const {nodeStore, productStore, setCurrentNodeData} = props
+  const { nodeStore, productStore, setCurrentNodeData } = props
   let options = productStore.productData?.nodes.map(n => {
     return (
       <option key={n.id} value={n.id}>
@@ -26,7 +26,7 @@ const NodeSelector = props => {
   return (
     <FormControl fullWidth className={classes.formControl}>
       <InputLabel shrink variant="outlined" id="node-selector">
-        Select a node
+        選擇要修改的部份
       </InputLabel>
       <Select
         labelId="node-selector"
@@ -67,4 +67,4 @@ const mapStateToProps = state => ({
   setCurrentNodeData: PropTypes.func.isRequired
 })
 
-export default connect(mapStateToProps, {setCurrentNodeData})(NodeSelector)
+export default connect(mapStateToProps, { setCurrentNodeData })(NodeSelector)

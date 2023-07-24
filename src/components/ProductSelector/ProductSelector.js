@@ -1,14 +1,14 @@
-import React, {useEffect} from "react"
-import {connect} from "react-redux"
-import {PropTypes} from "prop-types"
-import {FormControl, InputLabel, Select} from "@material-ui/core"
-import {makeStyles} from "@material-ui/core/styles"
+import React, { useEffect } from "react"
+import { connect } from "react-redux"
+import { PropTypes } from "prop-types"
+import { FormControl, InputLabel, Select } from "@material-ui/core"
+import { makeStyles } from "@material-ui/core/styles"
 import {
   getCurrentProductData,
   getProductDataList,
   setCurrentProductData
 } from "../../redux/actions/ProductActions"
-import {setCurrentNodeData} from "../../redux/actions/NodeActions"
+import { setCurrentNodeData } from "../../redux/actions/NodeActions"
 
 const useStyles = makeStyles(theme => ({
   formControl: {
@@ -54,7 +54,7 @@ const ProductSelector = props => {
   return (
     <FormControl fullWidth className={classes.formControl}>
       <InputLabel shrink variant="outlined" id="product-selector">
-        Select product
+        選擇要客製的產品
       </InputLabel>
       <Select
         labelId="product-selector"

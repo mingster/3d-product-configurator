@@ -1,8 +1,8 @@
-import React, {useEffect} from "react"
-import {connect} from "react-redux"
-import {PropTypes} from "prop-types"
-import {Grid, IconButton, Avatar, Typography} from "@material-ui/core"
-import {makeStyles} from "@material-ui/core/styles"
+import React, { useEffect } from "react"
+import { connect } from "react-redux"
+import { PropTypes } from "prop-types"
+import { Grid, IconButton, Avatar, Typography } from "@material-ui/core"
+import { makeStyles } from "@material-ui/core/styles"
 import {
   setCurrentMaterialData,
   setSelectedMeshMaterial
@@ -46,7 +46,7 @@ const MaterialSelector = props => {
     <>
       <Grid item className={classes.root}>
         {nodeStore.currentNodeData ? (
-          <Typography variant="h4">Choose a material</Typography>
+          <Typography variant="h4">選擇材料</Typography>
         ) : (
           <></>
         )}
