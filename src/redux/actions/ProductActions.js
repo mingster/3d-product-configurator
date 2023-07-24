@@ -35,13 +35,12 @@ export function getProductDataList() {
           payload: data
         })
 
-        if(data.length > 0) {
+        if (data.length > 0) {
           dispatch({
             type: SET_CURRENT_PRODUCT_DATA,
             payload: data[0]
-          })      
+          })
         }
-        
       })
   }
 }
