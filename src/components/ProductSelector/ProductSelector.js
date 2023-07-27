@@ -59,7 +59,6 @@ const ProductSelector = props => {
       <Select
         labelId="product-selector"
         native
-        labelWidth={50}
         label="Select product"
         variant="outlined"
         style={{

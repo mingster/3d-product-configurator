@@ -1,10 +1,10 @@
 import React from "react"
-import {connect} from "react-redux"
-import {PropTypes} from "prop-types"
-import {FormControl, InputLabel, Select} from "@mui/material"
+import { connect } from "react-redux"
+import { PropTypes } from "prop-types"
+import { FormControl, InputLabel, Select } from "@mui/material"
 import makeStyles from '@mui/styles/makeStyles';
-import {setCurrentDracoVersion} from "../../redux/actions/ProductActions"
-import {DRACO_VERSION_LIST} from "../../constants"
+import { setCurrentDracoVersion } from "../../redux/actions/ProductActions"
+import { DRACO_VERSION_LIST } from "../../constants"
 
 const useStyles = makeStyles(theme => ({
   formControl: {
@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
 
 const DracoSelector = props => {
   const classes = useStyles()
-  const {productStore, setCurrentDracoVersion} = props
+  const { productStore, setCurrentDracoVersion } = props
   const options = DRACO_VERSION_LIST.map(p => {
     return (
       <option key={p.id} value={p.id}>
@@ -32,7 +32,7 @@ const DracoSelector = props => {
       <Select
         labelId="draco-selector"
         native
-        labelWidth={50}
+        labelwidth={50}
         label=""
         variant="outlined"
         style={{

@@ -31,7 +31,6 @@ const NodeSelector = props => {
       <Select
         labelId="node-selector"
         native
-        labelWidth={50}
         label="Select node"
         variant="outlined"
         style={{

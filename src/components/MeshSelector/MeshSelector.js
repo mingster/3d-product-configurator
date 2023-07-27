@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from "react"
-import {connect} from "react-redux"
-import {PropTypes} from "prop-types"
-import {FormControl, InputLabel, Select} from "@mui/material"
+import React, { useEffect, useState } from "react"
+import { connect } from "react-redux"
+import { PropTypes } from "prop-types"
+import { FormControl, InputLabel, Select } from "@mui/material"
 import makeStyles from '@mui/styles/makeStyles';
-import {setSelectedMeshData} from "../../redux/actions/MeshActions"
+import { setSelectedMeshData } from "../../redux/actions/MeshActions"
 
 const useStyles = makeStyles(theme => ({
   formControl: {
@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
 
 const MeshSelector = props => {
   const classes = useStyles()
-  const {meshStore, nodeStore, productStore, setSelectedMeshData} = props
+  const { meshStore, nodeStore, productStore, setSelectedMeshData } = props
   let options = nodeStore.currentNodeData?.candidateMeshes.map(n => {
     return (
       <option key={n.id} value={n.id}>
@@ -44,7 +44,6 @@ const MeshSelector = props => {
         <Select
           labelId="mesh-selector"
           native
-          labelWidth={50}
           label="Select node"
           variant="outlined"
           style={{
@@ -78,4 +77,4 @@ const mapStateToProps = state => ({
   setSelectedMeshData: PropTypes.func.isRequired
 })
 
-export default connect(mapStateToProps, {setSelectedMeshData})(MeshSelector)
+export default connect(mapStateToProps, { setSelectedMeshData })(MeshSelector)
