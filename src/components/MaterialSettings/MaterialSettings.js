@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect, useState } from "react"
 import { SET_CURRENT_MATERIAL_DATA } from "../../redux/StoreConstants"
-import { Box, Divider, Paper, Switch, Typography } from "@material-ui/core"
+import { Box, Divider, Paper, Switch, Typography } from "@mui/material"
 import ToggleDisplay from "react-toggle-display"
 
 let animationFrameReq

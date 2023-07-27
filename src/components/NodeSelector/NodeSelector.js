@@ -1,8 +1,8 @@
 import React from "react"
 import { connect } from "react-redux"
 import { PropTypes } from "prop-types"
-import { FormControl, InputLabel, Select } from "@material-ui/core"
-import { makeStyles } from "@material-ui/core/styles"
+import { FormControl, InputLabel, Select } from "@mui/material"
+import makeStyles from '@mui/styles/makeStyles';
 import { setCurrentNodeData } from "../../redux/actions/NodeActions"
 
 const useStyles = makeStyles(theme => ({
