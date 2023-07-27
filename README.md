@@ -1,7 +1,7 @@
 ## 3D Product Configurator
 
 ## Live site
-[https://3d-product-configurator.vercel.app/](https://3d-product-configurator.vercel.app/)
+[https://ming-3d-product-configurator.vercel.app/](https://ming-3d-product-configurator.vercel.app/)
 
 ## Screenshot
 ![](https://github.com/belopot/3d-product-configurator/blob/master/screenshots/image1.jpg)
